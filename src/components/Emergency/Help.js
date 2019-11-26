@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import ErrorOutlineRoundedIcon from '@material-ui/icons/ErrorOutlineRounded';
-import '../../styles/Help.css'
+import ErrorTwoToneIcon from '@material-ui/icons/ErrorTwoTone';import '../../styles/Help.css'
 import { alert } from "../../service"
 import { observer, inject } from 'mobx-react';
 import apiClient from '../../apiClient';
@@ -23,7 +22,7 @@ class Help extends Component {
   render(){
     return(
       <div id="helpContainer">
-        <ErrorOutlineRoundedIcon id="helpIcon" onClick = {this.saveCurrentLocation}/>
+        <ErrorTwoToneIcon id="helpIcon" onClick = {this.saveCurrentLocation}/>
       </div>
     );
  }
