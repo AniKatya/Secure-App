@@ -25,13 +25,13 @@ class SignUp extends Component {
 
     updateSignUpState = () => this.props.updateCondition(this.state.name);
 
-    addUserData = async () => {
+    addUserData = async() => {
 
         !this.state.name || !this.state.email ? alert('please fill empty fields') : this.updateSignUpState()
 
         localStorage.setItem("name", this.state.name)
 
-        await navigator.geolocation.getCurrentPosition(pos => {
+        navigator.geolocation.getCurrentPosition(pos => {
             const coords = pos.coords
             this.props.UserStore.updateVictimLocation(coords.latitude.toFixed(6), coords.longitude.toFixed(6))
         })
@@ -48,17 +48,15 @@ class SignUp extends Component {
 
         if (existingUser.data) {
             this.props.UserStore.updateCurrentUserID(existingUser.data._id)
-            await navigator.geolocation.getCurrentPosition(async (pos) => {
+            navigator.geolocation.getCurrentPosition(async (pos) => {
                 const coords = pos.coords
                 const addressCoded = await apiClient.getDecodedAddress(coords.latitude, coords.longitude)
                 const address = addressCoded.data.results[0].formatted_address
                 await apiClient.updateUser(coords.latitude, coords.longitude, address, subscription)
             })
-        }
-
-        else {
+        }else {
             const s = this.state
-            await navigator.geolocation.getCurrentPosition(async (pos) => {
+            navigator.geolocation.getCurrentPosition(async (pos) => {
                 const coords = pos.coords
                 const addressCoded = await apiClient.getDecodedAddress(coords.latitude, coords.longitude)
                 const address = addressCoded.data.results[0].formatted_address
