@@ -53,5 +53,5 @@ export class Sos extends Component {
 }
 
 export default GoogleApiWrapper({
-  apiKey: 'AIzaSyATd6WHazWSaDDn4ivv2g9BHvDAeVf4xIw'
+  apiKey: 'AIzaSyAMpvQHv5HtsjIQSG389S6YNnbXZI7u0Xs'
 })(Sos);
