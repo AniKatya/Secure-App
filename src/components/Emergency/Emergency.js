@@ -9,12 +9,12 @@ import '../../styles/emergency.css'
 class Emergency extends Component {
   render(){
     return(
-        <div id="emergencyContainer">
-          <Help id="helpComp"/>
-          <div id="otherHelpButtons">
-          <CallPolice id="policeComp"/>
-          <PlayRingtone id="ringtoneComp"/>
-          <SendLocationToEC id="locationComp"/>
+        <div className="emergencyContainer">
+          <Help />
+          <div className = "emergency-buttons-container">
+          <CallPolice />
+          <PlayRingtone />
+          <SendLocationToEC />
           </div>
         </div>
     );

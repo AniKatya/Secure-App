@@ -29,10 +29,10 @@ export default function ButtonAppBar() {
 
   return (
     <div className={classes.root}>
-      <AppBar style={{backgroundColor:"#5BC0BE"}}position="static">
+      <AppBar style={{backgroundColor:"#5BC0BE"}} position="static">
         <Toolbar>
             <SwipeableTemporaryDrawer />
-          <Typography style={{marginLeft:"70px"}}variant="h5" className={classes.title}>
+          <Typography style={{marginLeft:"70px",color:"#1b4455",fontWeight:"bold",fontFamily:'Work Sans'}} variant="h5" className={classes.title}>
             RescYouMe
           </Typography>
         </Toolbar>

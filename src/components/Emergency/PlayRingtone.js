@@ -1,18 +1,17 @@
 import React, { Component } from 'react';
-import VolumeDownTwoToneIcon from '@material-ui/icons/VolumeDownTwoTone';
-import Button from '@material-ui/core/Button';
+import PhonelinkRingTwoToneIcon from '@material-ui/icons/PhonelinkRingTwoTone';
 import '../../styles/PlayRingtone.css'
+import ringtone from "../materialComps/ringtone.mp3"
 
 class PlayRingtone extends Component {
   playAudio(){
-    new Audio('http://cdn.mos.musicradar.com/audio/samples/hip-hop-demo-loops/GuitarlineK02%2094D-02.mp3').play()
+    new Audio(ringtone).play()
   };
 
   render(){
     return(
         <div id="playRingtoneContainer">
-        <VolumeDownTwoToneIcon id="playRingtoneIcon"/>
-         <Button id="playRingtoneHeader" onClick={this.playAudio}>Ringtone</Button>
+        <PhonelinkRingTwoToneIcon onClick={this.playAudio} id="playRingtoneIcon"/>
         </div>
     );
  }

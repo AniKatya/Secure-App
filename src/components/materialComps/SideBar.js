@@ -10,7 +10,6 @@ import ListItemIcon from '@material-ui/core/ListItemIcon';
 import MenuIcon from '@material-ui/icons/Menu';
 import { Link } from 'react-router-dom'
 import PersonIcon from '@material-ui/icons/Person';
-// import AssignmentIndIcon from '@material-ui/icons/AssignmentInd';
 import DirectionsRunIcon from '@material-ui/icons/DirectionsRun';
 import PublicIcon from '@material-ui/icons/Public';
 import Logo from "../materialComps/logo_transparent.png" 

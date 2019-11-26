@@ -1,12 +1,13 @@
 html{
-    background-color: #3A506B
+    background-color: #2D728F;
+    font-family: 'Work Sans', sans-serif;
 }
 
 .button {
     display: block;
     width: 115px;
     height: 25px;
-    background: #4E9CAF;
+    background-color:#3B8EA5;
     padding: 10px;
     text-align: center;
     border-radius: 5px;

@@ -9,7 +9,7 @@ class UserStore {
     @action updateUserKeys = e => this.setState({ [e.target.name]: e.target.value });
 
     @action getLocation = async () => {
-        await navigator.geolocation.getCurrentPosition(pos => {
+        navigator.geolocation.getCurrentPosition(pos => {
             const coords = pos.coords
             this.latitude = coords.latitude
             this.longitude = coords.longitude

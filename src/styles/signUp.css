@@ -1,3 +1,5 @@
+
+
 #signupContainer{
     margin-top: 50px;
     border-width: 5px;
@@ -19,9 +21,6 @@
 #signUpHeader{
     grid-area: H;
     justify-self: center;
-    font-size: 2em;
-    margin-top: -20%
-
 }
 
 #nameContainer{
@@ -68,5 +67,6 @@
 #registerButton{
     grid-area: B;
     justify-self: center;
+    background-color: #3B8EA5;
     margin-top: 10%
 }

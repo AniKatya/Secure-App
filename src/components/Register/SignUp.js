@@ -78,7 +78,6 @@ class SignUp extends Component {
         return (
             <div id="signupContainer">
                 <img id="logo" src={Logo} style={{}} alt=''/>
-                <h3 id="signUpHeader">Register</h3>
                 <div id="nameContainer">
                     <span id="nameHeader">Your Name: </span>
                     <TextField id="nameInput" label="name" name="name" type="text" placeholder="Type a name" onChange={this.saveUserData} />
@@ -88,7 +87,7 @@ class SignUp extends Component {
                     <TextField id="emailInput" label="email" name="email" type="text" placeholder="Type an email" onChange={this.saveUserData} />
                 </div>
                 {this.renderRedirect()}
-                <Button id="registerButton" variant="contained" color="primary" onClick={this.addUserData}>Enter RescYouMe</Button>
+                <Button id="registerButton" variant="contained" style={{fontFamily:'Work Sans'}} color="primary" onClick={this.addUserData}>Enter</Button>
             </div>
         );
     }

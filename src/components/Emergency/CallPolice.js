@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PhoneIcon from '@material-ui/icons/Phone';
-import Button from '@material-ui/core/Button';
+import Link from '@material-ui/core/Link';
 import '../../styles/police.css'
 
 class CallPolice extends Component {
@@ -8,8 +8,7 @@ class CallPolice extends Component {
   render(){
     return(
         <div id="policeContainer">
-         <PhoneIcon id="policeIcon" />
-         <Button id="policeHeader" href="tel:+972542833939">Call Police!</Button>
+         <Link href="tel:+972546830028"><PhoneIcon id="policeIcon" className = "emergency-button" ></PhoneIcon></Link>
         </div>
     );
  }

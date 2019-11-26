@@ -2,8 +2,8 @@
 import React, {Component} from 'react'
 import apiClient from '../../apiClient'
 import { inject } from 'mobx-react';
-import LocalPostOfficeTwoToneIcon from '@material-ui/icons/LocalPostOfficeTwoTone';
-import Button from '@material-ui/core/Button';
+import ChatTwoToneIcon from '@material-ui/icons/ChatTwoTone';
+import Link from '@material-ui/core/Link';
 import '../../styles/location.css'
 
 @inject("UserStore")
@@ -55,11 +55,11 @@ class SendLocationToEC extends Component {
         const userName = this.props.UserStore.currentUser.name
         // let contactNumbers = this.cleanPhoneNumbers()
         // const cleanNumbers = contactNumbers.join(",")
-        const sms = `sms:+972542833939?body=Your friend, ${userName}, is feeling unsafe. ${userName} is located at ${this.state.address}`
+        const sms = `sms:+972546830028?body=Your friend, ${userName}, is feeling unsafe. ${userName} is located at ${this.state.address}`
         return (
             this.state.address ? 
             <div id="locationContainer" >
-                <LocalPostOfficeTwoToneIcon id="locationIcon"/><Button id="locationHeader" href={sms} >Location</Button> 
+                <Link  href={sms}><ChatTwoToneIcon id="locationIcon"/></Link>
             </div>: null
         )
     }
