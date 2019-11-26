@@ -3,13 +3,14 @@ import UserStore from './stores/UserStore';
 
 class ApiClient {
     constructor() {
-        // this.URLname = "http://localhost:4000"
-        this.URLname=""
+        this.URLname = "http://localhost:4000"
+        // this.URLname=""
         this.key = "AIzaSyAMpvQHv5HtsjIQSG389S6YNnbXZI7u0Xs"
         this.currentUserID = "5d655effb9671e0a5f87ba68"
     }
 
     getDecodedAddress = async (lat, lng) => {
+        console.log(lat,lng)
         return await axios.get(`https://maps.googleapis.com/maps/api/geocode/json?latlng=${lat},${lng}&key=${this.key}`)
     };
 

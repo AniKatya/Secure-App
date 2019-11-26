@@ -87,7 +87,7 @@ class SignUp extends Component {
                     <TextField id="emailInput" label="email" name="email" type="text" placeholder="Type an email" onChange={this.saveUserData} />
                 </div>
                 {this.renderRedirect()}
-                <Button id="registerButton" variant="contained" style={{fontFamily:'Work Sans'}} color="primary" onClick={this.addUserData}>Enter</Button>
+                <Button id="register-button" variant="contained" onClick={this.addUserData}>Enter</Button>
             </div>
         );
     }

@@ -6,17 +6,11 @@
     "H";
 }
 
-#locationHeader{
-    grid-area: H;
-    color:#5BC0BE;
-    text-decoration-line:none;
-    font-size:1em;
 
-}
 
 #locationIcon{
     grid-area: I;
     font-size:5em;
-    color:#5BC0BE;
+    color: #3b8ea5; 
 
 }

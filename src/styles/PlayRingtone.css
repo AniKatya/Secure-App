@@ -8,15 +8,9 @@
 
 #playRingtoneIcon{
     grid-area: I;
-    color:#5BC0BE;
+    color: #3b8ea5; 
     font-size:5em;
     /* margin-left:25%; */
     justify-self: center;
 }
 
-#playRingtoneHeader{
-    grid-area: H;
-    /* margin-left:25%; */
-    color:#5BC0BE;
-    font-size:1em;
-}
