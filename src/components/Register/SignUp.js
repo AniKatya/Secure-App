@@ -26,6 +26,7 @@ class SignUp extends Component {
     updateSignUpState = () => this.props.updateCondition(this.state.name);
 
     addUserData = async () => {
+
         !this.state.name || !this.state.email ? alert('please fill empty fields') : this.updateSignUpState()
 
         localStorage.setItem("name", this.state.name)

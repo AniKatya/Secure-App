@@ -13,6 +13,7 @@ const privateKey = process.env.PRIVATE_PUSH_KEY || ''
 router.get('/existingUser/:name/:email', (req, res) => {
   let email = req.params.email
   let name = req.params.name
+  console.log(email,name)
   User.findOne({ email, name }).exec((err, user) => err ? res.send(err) : res.send(user))
 });
 
