@@ -5,7 +5,7 @@ class ApiClient {
     constructor() {
         // this.URLname = "http://localhost:4000"
         this.URLname=""
-        this.key = "AIzaSyB7bTH7gOg_LUILwwIFYuXSiCwDR1beic8"
+        this.key = "AIzaSyAMpvQHv5HtsjIQSG389S6YNnbXZI7u0Xs"
         this.currentUserID = "5d655effb9671e0a5f87ba68"
     }
 
