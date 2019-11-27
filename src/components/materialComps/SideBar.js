@@ -50,7 +50,7 @@ export default function SwipeableTemporaryDrawer() {
       onKeyDown={toggleDrawer(side, false)}
     >
       <List className = "sidebar-container">
-          <img src={Logo} id = "sidebar-logo" />
+          <img src={Logo} alt="" id = "sidebar-logo" />
           <Divider />
           <ListItem>
              <ListItemIcon className = "sidebar-icon">  

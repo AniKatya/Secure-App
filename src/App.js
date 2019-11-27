@@ -12,7 +12,7 @@ import '../src/styles/style.css'
 import AppBar from '@material-ui/core/AppBar';
 // import Button from '@material-ui/core/Button';
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
-import ButtonAppBar from './components/materialComps/AppBar'
+import ButtonAppBar from './components/materialComps/Appbar'
 import { observer, inject } from 'mobx-react';
 import { Redirect } from 'react-router-dom'
 
