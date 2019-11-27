@@ -15,4 +15,6 @@
 #distress-message{
     color: #3b8ea5 !important;
     font-weight: bold !important;
+    text-align: center;
+    margin: auto;
 }

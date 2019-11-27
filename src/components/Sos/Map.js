@@ -1,5 +1,7 @@
-import React from 'react';
+import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
+import { observer, inject } from 'mobx-react';
+
 import "../../styles/style.css"
 
 const mapStyles = {
@@ -12,7 +14,10 @@ const mapStyles = {
     borderRadius: "20px"
   }
 };
-export class CurrentLocation extends React.Component {
+
+@inject('UserStore')
+@observer
+class CurrentLocation extends Component {
   constructor(props) {
     super(props);
 
@@ -109,7 +114,7 @@ export class CurrentLocation extends React.Component {
 
     return (
       <div>
-        <a className='button' href={`https://www.google.com/maps/dir/?api=1&destination=32.062133,34.773523`}>Get Directions</a>
+        <a className='button' href={`https://www.google.com/maps/dir/?api=1&destination=${this.props.UserStore.latitude},${this.props.UserStore.longitude}`}>Get Directions</a>
         <div style={style} ref="map">
           Loading map...
         </div>
@@ -130,3 +135,4 @@ CurrentLocation.defaultProps = {
   centerAroundCurrentLocation: false,
   visible: true
 };
+

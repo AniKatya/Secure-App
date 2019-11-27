@@ -36,7 +36,7 @@ class Address extends Component {
     render() {
         return (
               <div id = "distress-message">
-                 DISTRESS CALL FROM {this.state.Address}
+                 Distress call from {this.state.Address}
               </div>
         )
     }
