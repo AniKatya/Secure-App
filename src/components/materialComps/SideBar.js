@@ -13,7 +13,7 @@ import DirectionsRunIcon from '@material-ui/icons/DirectionsRun';
 import PublicIcon from '@material-ui/icons/Public';
 import '../../styles/appbar.css'
 import Logo from "../materialComps/logo_transparent.png" 
-import { ActionImportantDevices } from 'material-ui/svg-icons';
+// import { ActionImportantDevices } from 'material-ui/svg-icons';
 
 const useStyles = makeStyles({
   list: {
