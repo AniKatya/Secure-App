@@ -12,7 +12,7 @@ import '../src/styles/style.css'
 import AppBar from '@material-ui/core/AppBar';
 // import Button from '@material-ui/core/Button';
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
-import ButtonAppBar from './components/materialComps/Appbar'
+import TopBar from './components/materialComps/TopBar'
 import { observer, inject } from 'mobx-react';
 import { Redirect } from 'react-router-dom'
 
@@ -34,7 +34,7 @@ class App extends Component {
     const name = this.state.name
     return (
       <Router>
-        {name !== "" ?<ButtonAppBar /> : null}
+        {name !== "" ?<TopBar /> : null}
         <MuiThemeProvider theme={theme}>
           <AppBar position="static"></AppBar>
         </MuiThemeProvider>
