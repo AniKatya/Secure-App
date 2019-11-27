@@ -5,6 +5,7 @@
 .signup-container{
     margin-top: 15%;
     display: grid;
+    width: 80vw;
     grid-template-areas: 
     "L"
     "N"
@@ -100,4 +101,12 @@
     font-size: 110%;
     width: 50vw;
     height: 50%;
+}
+
+#email-input{
+    color: #92bbc7 !important;
+}
+
+#name-input{
+    color:#92bbc7 !important;
 }
