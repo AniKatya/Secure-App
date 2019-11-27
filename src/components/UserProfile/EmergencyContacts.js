@@ -34,24 +34,20 @@ class EmergencyContacts extends Component {
         await this.getAllContacts()
     };
 
-    deleteUserContact = async (id) => {
-        await apiClient.deleteUserContact(id)
+    deleteUserContact = async(id) => {
+        await apiClient.deleteUserContact(this.props.UserStore.currentUserID,id)
         await this.getAllContacts();
     };
 
-    updateUserContactNumber = async (id, phoneNumber) => {
-        await apiClient.updateUserContactNumber(id, phoneNumber)
-        await this.getAllContacts()
-    };
-
+  
     render() {
         const contacts = this.state.contacts
         return (
             <div className="emergency-contacts-container">
                 <h3 id="comp-header">ADD EMERGENCY CONTACT</h3>
-                <div style={{ marginTop: "20px" }}>
+                <div>
                     {contacts ? contacts.map(c =>
-                        <PhoneNumber key={c._id} contact={c} deleteUserContact={this.deleteUserContact} updateUserContactNumber={this.updateUserContactNumber} />
+                        <PhoneNumber key={c._id} contact={c} deleteUserContact={this.deleteUserContact} />
                     ) : null}
                 </div>
                 <div className="name-container" style={{ marginTop: "50px" }}>

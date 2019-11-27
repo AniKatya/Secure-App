@@ -39,7 +39,7 @@ class App extends Component {
           <AppBar position="static"></AppBar>
         </MuiThemeProvider>
         <Route path="/" exact render={() => <SignUp updateCondition={this.updateCondition} />} />
-        {name !== "" ? <Route path="/sos" exact render={() => <Sos />} />: <Redirect to='/' />}
+        {/* {name !== "" ? <Route path="/sos" exact render={() => <Sos />} />: <Redirect to='/' />} */}
         {name !== "" ? <Route path="/userProfile" exact render={() => <UserProfile />} />: <Redirect to='/' />}
         {name !== "" ? <Route path="/emergency" exact render={() => <Emergency />} /> : <Redirect to='/' />}
       </Router>

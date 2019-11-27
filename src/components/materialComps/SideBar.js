@@ -13,6 +13,7 @@ import DirectionsRunIcon from '@material-ui/icons/DirectionsRun';
 import PublicIcon from '@material-ui/icons/Public';
 import '../../styles/appbar.css'
 import Logo from "../materialComps/logo_transparent.png" 
+import { black } from 'material-ui/styles/colors';
 // import { ActionImportantDevices } from 'material-ui/svg-icons';
 
 const useStyles = makeStyles({
@@ -21,8 +22,7 @@ const useStyles = makeStyles({
   },
   fullList: {
     width: 'auto',
-  },
-
+  }
 });
 
 export default function SwipeableTemporaryDrawer() {
@@ -69,12 +69,12 @@ export default function SwipeableTemporaryDrawer() {
              </Button>
           </ListItem>
           <ListItem>
-             <ListItemIcon className = "sidebar-icon">
+             {/* <ListItemIcon className = "sidebar-icon">
                 <PublicIcon />
-             </ListItemIcon>
-             <Button >
+             </ListItemIcon> */}
+             {/* <Button >
                 <Link className="links" to="/sos" id="sos-link" className = "sidebar-link">SOS</Link>
-             </Button>
+             </Button> */}
           </ListItem>
       </List>
     </div>

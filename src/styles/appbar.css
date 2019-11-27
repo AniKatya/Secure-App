@@ -34,3 +34,7 @@
 #sos-link{
     margin-left: -15px;
 }
+
+.MuiPaper-root {
+    background-color: #1d2a33 !important;
+}
