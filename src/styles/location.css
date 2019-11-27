@@ -6,11 +6,13 @@
     "H";
 }
 
-
-
 #locationIcon{
     grid-area: I;
     font-size:5em;
     color: #3b8ea5; 
+}
 
+#distress-message{
+    color: #3b8ea5 !important;
+    font-weight: bold !important;
 }

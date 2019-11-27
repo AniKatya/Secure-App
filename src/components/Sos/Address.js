@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import ApiClient from '../../apiClient'
+import '../../styles/location.css'
 
 
 class Address extends Component {
@@ -34,9 +35,8 @@ class Address extends Component {
 
     render() {
         return (
-              <div style={{marginLeft:"20%", marginTop:"5%"}}>
-                 <span style={{marginLeft:"6%"}}>DISTRESS CALL FROM</span><br></br>
-                 {this.state.Address}
+              <div id = "distress-message">
+                 DISTRESS CALL FROM {this.state.Address}
               </div>
         )
     }
