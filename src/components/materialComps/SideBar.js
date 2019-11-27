@@ -1,4 +1,3 @@
-/* eslint-disable jsx-a11y/alt-text */
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import SwipeableDrawer from '@material-ui/core/SwipeableDrawer';
@@ -12,7 +11,9 @@ import { Link } from 'react-router-dom'
 import PersonIcon from '@material-ui/icons/Person';
 import DirectionsRunIcon from '@material-ui/icons/DirectionsRun';
 import PublicIcon from '@material-ui/icons/Public';
+import '../../styles/appbar.css'
 import Logo from "../materialComps/logo_transparent.png" 
+import { ActionImportantDevices } from 'material-ui/svg-icons';
 
 const useStyles = makeStyles({
   list: {
@@ -21,6 +22,7 @@ const useStyles = makeStyles({
   fullList: {
     width: 'auto',
   },
+
 });
 
 export default function SwipeableTemporaryDrawer() {
@@ -47,31 +49,31 @@ export default function SwipeableTemporaryDrawer() {
       onClick={toggleDrawer(side, false)}
       onKeyDown={toggleDrawer(side, false)}
     >
-      <List>
-          <img src={Logo} style={{width: "250px", height: "250px"}} />
-          <Divider style={{marginTop:"-40px"}}/>
-          <ListItem style={{marginTop:"20px"}}>
-             <ListItemIcon style={{marginRight:"-20px"}}>
+      <List className = "sidebar-container">
+          <img src={Logo} id = "sidebar-logo" />
+          <Divider />
+          <ListItem>
+             <ListItemIcon className = "sidebar-icon">  
                 <PersonIcon />
              </ListItemIcon>
              <Button >
-               <Link className="links" to="/userProfile" style={{color:"black", textDecorationLine:"none"}}>user Profile</Link>
+               <Link className="links" to="/userProfile" className = "sidebar-link">user Profile</Link>
              </Button>
           </ListItem>
           <ListItem>
-             <ListItemIcon style={{marginRight:"-20px"}}>
+             <ListItemIcon className = "sidebar-icon">
                <DirectionsRunIcon />
              </ListItemIcon>
              <Button >
-               <Link className="links" to="/emergency" style={{color:"black", textDecorationLine:"none"}}>emergency</Link>
+               <Link className="links" to="/emergency" className = "sidebar-link">emergency</Link>
              </Button>
           </ListItem>
           <ListItem>
-             <ListItemIcon style={{marginRight:"-30px"}}>
+             <ListItemIcon className = "sidebar-icon">
                 <PublicIcon />
              </ListItemIcon>
              <Button >
-                <Link className="links" to="/sos" style={{color:"black", textDecorationLine:"none"}}>SoS</Link>
+                <Link className="links" to="/sos" id="sos-link" className = "sidebar-link">SOS</Link>
              </Button>
           </ListItem>
       </List>
@@ -80,8 +82,7 @@ export default function SwipeableTemporaryDrawer() {
 
   return (
     <div>
-
-    <MenuIcon style={{marginTop:"5px"}} onClick={toggleDrawer('left', true)} edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
+    <MenuIcon onClick={toggleDrawer('left', true)} edge="start" className={classes.menuButton}>
     </MenuIcon>
       <SwipeableDrawer
         open={state.left}

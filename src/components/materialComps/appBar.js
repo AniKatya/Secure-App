@@ -4,7 +4,7 @@ import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import SwipeableTemporaryDrawer from './SideBar'
-
+import '../../styles/appbar.css'
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -24,10 +24,10 @@ export default function ButtonAppBar() {
 
   return (
     <div className={classes.root}>
-      <AppBar style={{backgroundColor:"#1d2a33"}} position="static">
-        <Toolbar>
+      <AppBar position="static">
+        <Toolbar className = "app-bar">
             <SwipeableTemporaryDrawer />
-          <Typography style={{marginLeft:"70px",color: "#3B8EA5",fontWeight:"bold",fontFamily:'Work Sans'}} variant="h5" className={classes.title}>
+          <Typography id = "app-bar-header" variant="h5" className={classes.title}>
             RescYouMe
           </Typography>
         </Toolbar>

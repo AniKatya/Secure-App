@@ -1,0 +1,79 @@
+.emergency-contacts-container{
+    margin-top: 15%;
+    display: grid;
+    grid-template-areas: 
+    "L"
+    "N"
+    "P"
+    "B"
+}
+
+.name-container{
+    grid-area: N;
+    justify-self: center;
+    margin-top: -15%;
+    display: grid;
+    grid-template-areas: 
+    "nh"
+}
+
+.phone-container{
+    grid-area: P;
+    justify-self: center;
+    margin-top: 10%;
+    display: grid;
+    grid-template-areas: 
+    "ph"
+}
+
+
+#header-name{
+    grid-area: nh;
+    justify-self: center;
+    color: #3b8ea5; 
+    font-size: 110%;
+}
+
+#header-phone{
+    grid-area: ph;
+    justify-self: center;
+    color: #3b8ea5; 
+    font-size: 110%;
+}
+
+#comp-header{
+    text-align: center;
+    color: #3b8ea5; 
+}
+
+#addcontact-button{
+    grid-area: B;
+    justify-self: center;
+    background-color: #1d2a33;
+    font-weight: bold;
+    margin-top: 15%;
+    color: #3b8ea5; 
+    font-size: 110%;
+    width: 50vw;
+    height: 50%;
+}
+
+#input-name:-webkit-autofill,
+#input-name:-webkit-autofill:hover,
+#input-name:-webkit-autofill:focus,
+#input-name:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+}
+#input-name:-webkit-autofill {
+    -webkit-text-fill-color: #92bbc7 !important;
+}
+
+#input-phone:-webkit-autofill,
+#input-phone:-webkit-autofill:hover,
+#input-phone:-webkit-autofill:focus,
+#input-phone:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+}
+#input-phone:-webkit-autofill {
+    -webkit-text-fill-color: #92bbc7 !important;
+}

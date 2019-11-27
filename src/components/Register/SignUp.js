@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-expressions */
 import React, { Component } from 'react';
 import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
@@ -76,15 +75,15 @@ class SignUp extends Component {
 
     render() {
         return (
-            <div id="signupContainer">
+            <div className = "signup-container">
                 <img id="logo" src={Logo} style={{}} alt=''/>
-                <div id="nameContainer">
-                    <span id="nameHeader">Your Name: </span>
-                    <TextField id="nameInput" label="name" name="name" type="text" placeholder="Type a name" onChange={this.saveUserData} />
+                <div className = "name-container">
+                    <span id="name-header">Your Name: </span>
+                    <TextField id="name-input"  name="name" type="text" onChange={this.saveUserData} />
                 </div>
-                <div id="emailContainer">
-                    <span id="emailHeader">Your Email: </span>
-                    <TextField id="emailInput" label="email" name="email" type="text" placeholder="Type an email" onChange={this.saveUserData} />
+                <div className = "email-container">
+                    <span id="email-header">Your Email: </span>
+                    <TextField className = "input" id="email-input" name="email" type="text" onChange={this.saveUserData} />
                 </div>
                 {this.renderRedirect()}
                 <Button id="register-button" variant="contained" onClick={this.addUserData}>Enter</Button>

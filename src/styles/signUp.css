@@ -2,50 +2,63 @@
     font-family:'Work Sans';
 }
 
-#signupContainer{
-    margin-top: 50px;
-    border-width: 5px;
+.signup-container{
+    margin-top: 15%;
     display: grid;
     grid-template-areas: 
     "L"
-    "H"
     "N"
     "E"
     "B";
 }
+
 #logo{
     grid-area: L;
     justify-self: center;
     width: 100vw;
-    margin-top: -20%
+    margin-top: -15%
 }
 
-#signUpHeader{
-    grid-area: H;
-    justify-self: center;
-}
 
-#nameContainer{
+.name-container{
     grid-area: N;
     justify-self: center;
-    /* margin-top: 10%; */
+    margin-top: -15%;
     display: grid;
     grid-template-areas: 
     "nh"
     "ni"
-
 }
-#nameHeader{
+
+#name-header{
     grid-area: nh;
     justify-self: center;
-
+    color: #3b8ea5; 
+    font-size: 110%;
 }
-#nameInput{
+
+#name-input{
     grid-area: ni;
     justify-self: center;
 }
 
-#emailContainer{
+@-webkit-keyframes autofill {
+    to {
+        background: transparent;
+    }
+}
+
+#name-input:-webkit-autofill,
+#name-input:-webkit-autofill:hover,
+#name-input:-webkit-autofill:focus,
+#name-input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+}
+#name-input:-webkit-autofill {
+    -webkit-text-fill-color: #92bbc7 !important;
+}
+
+.email-container{
     grid-area: E;
     justify-self: center;
     margin-top: 10%;
@@ -54,24 +67,35 @@
     "eh"
     "ei"
 }
-#emailHeader{
+
+#email-header{
     grid-area: eh;
     justify-self: center;
-
+    color: #3b8ea5; 
+    font-size: 110%;
 }
-#emailInput{
+
+#email-input{
     grid-area: ei;
     justify-self: center;
-
 }
 
+#email-input:-webkit-autofill,
+#email-input:-webkit-autofill:hover,
+#email-input:-webkit-autofill:focus,
+#email-input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+}
+#email-input:-webkit-autofill {
+    -webkit-text-fill-color: #92bbc7 !important;
+}
 
 #register-button{
     grid-area: B;
     justify-self: center;
     background-color: #1d2a33;
     font-weight: bold;
-    margin-top: 10%;
+    margin-top: 15%;
     color: #3b8ea5; 
     font-size: 110%;
     width: 50vw;

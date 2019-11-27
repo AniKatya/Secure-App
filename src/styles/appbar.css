@@ -1,0 +1,36 @@
+.app-bar{
+    background-color: #1d2a33 !important;
+    color: #3b8ea5 !important;
+    font-weight: bold !important;
+}
+
+#app-bar-header{
+    margin-left: 23% !important;
+}
+
+.sidebar-container{
+    background-color: #1d2a33;
+}
+
+#sidebar-logo{
+    width: 60vw;
+    height: auto;
+    display:block;
+    margin:auto;
+}
+
+.sidebar-link{
+   color: #3b8ea5 !important;
+   font-size: 110%;
+   text-decoration-line: none;
+}
+
+.sidebar-icon{
+    color: #3b8ea5 !important;
+    margin-right: -20px;
+    margin-left: 5vw;
+}
+
+#sos-link{
+    margin-left: -15px;
+}

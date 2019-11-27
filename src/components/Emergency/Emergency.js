@@ -12,9 +12,9 @@ class Emergency extends Component {
         <div className="emergencyContainer">
           <Help />
           <div className = "emergency-buttons-container">
+          <SendLocationToEC />
           <CallPolice />
           <PlayRingtone />
-          <SendLocationToEC />
           </div>
         </div>
     );
