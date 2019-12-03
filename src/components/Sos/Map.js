@@ -6,7 +6,7 @@ import "../../styles/style.css"
 
 const mapStyles = {
   map: {
-    marginTop: '15%',
+    marginTop: '20%',
     marginLeft: '8%',
     position: 'absolute',
     width: '80%',
