@@ -6,11 +6,8 @@ html{
 .button {
     margin: auto;
     text-decoration: none;
-    justify-self: center;
-    text-align: center;
-    /* background-color: #1d2a33; */
     font-weight: bold;
-    margin-top: 5%;
+    margin-left: 5%;
     color: #3b8ea5; 
     font-size: 110%;
     width: 50vw;
