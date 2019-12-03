@@ -119,7 +119,7 @@ class CurrentLocation extends Component {
           Loading map...
         </div>
         {this.renderChildren()}
-        <a className='button' href={`https://www.google.com/maps/dir/?api=1&destination=${this.props.UserStore.latitude},${this.props.UserStore.longitude}`}>Get Directions</a>
+        {/* <a className='button' href={`https://www.google.com/maps/dir/?api=1&destination=${this.props.UserStore.latitude},${this.props.UserStore.longitude}`}>Get Directions</a> */}
       </div>
 
     );
